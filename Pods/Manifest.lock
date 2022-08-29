@@ -1,0 +1,24 @@
+PODS:
+  - AlgoliaSearchClient (8.15.0):
+    - Logging
+  - Kingfisher (7.3.2)
+  - Logging (1.4.0)
+
+DEPENDENCIES:
+  - AlgoliaSearchClient (~> 8.4)
+  - Kingfisher (~> 7.0)
+
+SPEC REPOS:
+  trunk:
+    - AlgoliaSearchClient
+    - Kingfisher
+    - Logging
+
+SPEC CHECKSUMS:
+  AlgoliaSearchClient: 3acecfd630f34585d051c39d6cea3460e416638c
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  Logging: beeb016c9c80cf77042d62e83495816847ef108b
+
+PODFILE CHECKSUM: d6c3f4979ba32d8a13edc772d9ec6243067b6ca8
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5202AACE28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5202AACC28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift */; };
+		5202AACF28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5202AACD28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib */; };
+		520BBBF728B4DAD300D345AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BBBF528B4DAD300D345AD /* HomeViewController.swift */; };
+		520BBBF828B4DAD300D345AD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BBBF628B4DAD300D345AD /* HomeViewController.xib */; };
+		5214F2E728B4A40300387C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214F2E628B4A40300387C27 /* AppDelegate.swift */; };
+		5214F2E928B4A40300387C27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214F2E828B4A40300387C27 /* SceneDelegate.swift */; };
+		5214F2EB28B4A40300387C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214F2EA28B4A40300387C27 /* ViewController.swift */; };
+		5214F2EE28B4A40300387C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5214F2EC28B4A40300387C27 /* Main.storyboard */; };
+		5214F2F028B4A40900387C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5214F2EF28B4A40900387C27 /* Assets.xcassets */; };
+		5214F2F328B4A40900387C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5214F2F128B4A40900387C27 /* LaunchScreen.storyboard */; };
+		5214F2FD28B4B29F00387C27 /* AlgoliaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */; };
+		52530C9C28B789EB00D3A1F8 /* SearchableAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52530C9A28B789EB00D3A1F8 /* SearchableAttributeViewController.swift */; };
+		52530C9D28B789EB00D3A1F8 /* SearchableAttributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52530C9B28B789EB00D3A1F8 /* SearchableAttributeViewController.xib */; };
+		52531ED928B8AAA80052A372 /* FilterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52531ED728B8AAA80052A372 /* FilterScreenViewController.swift */; };
+		52531EDA28B8AAA80052A372 /* FilterScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52531ED828B8AAA80052A372 /* FilterScreenViewController.xib */; };
+		52531EDD28B8B9450052A372 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52531EDC28B8B9450052A372 /* Checkbox.swift */; };
+		52531EE028B8D9AE0052A372 /* FacetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52531EDE28B8D9AE0052A372 /* FacetsViewController.swift */; };
+		52531EE128B8D9AE0052A372 /* FacetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52531EDF28B8D9AE0052A372 /* FacetsViewController.xib */; };
+		52A46A6128B4FD0F00ABA588 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A46A6028B4FD0E00ABA588 /* DataModel.swift */; };
+		52E9BC5C28B4DFF000AFC8AD /* ItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9BC5A28B4DFF000AFC8AD /* ItemTableCell.swift */; };
+		52E9BC5D28B4DFF000AFC8AD /* ItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9BC5B28B4DFF000AFC8AD /* ItemTableCell.xib */; };
+		52E9BC5F28B4E29400AFC8AD /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9BC5E28B4E29400AFC8AD /* ResultModel.swift */; };
+		91DF39C9E4715303CD6A78EF /* Pods_Algolia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FF86C8BA1AE97FD41395B9 /* Pods_Algolia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15FE5F65E83BA5B73BF8EEB2 /* Pods-Algolia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.debug.xcconfig"; path = "Target Support Files/Pods-Algolia/Pods-Algolia.debug.xcconfig"; sourceTree = "<group>"; };
+		3725157FFD45EA68439AE5FC /* Pods-Algolia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.release.xcconfig"; path = "Target Support Files/Pods-Algolia/Pods-Algolia.release.xcconfig"; sourceTree = "<group>"; };
+		5202AACC28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderFacetTableViewCell.swift; sourceTree = "<group>"; };
+		5202AACD28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderFacetTableViewCell.xib; sourceTree = "<group>"; };
+		520BBBF528B4DAD300D345AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		520BBBF628B4DAD300D345AD /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5214F2E328B4A40300387C27 /* Algolia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algolia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5214F2E628B4A40300387C27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5214F2E828B4A40300387C27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5214F2EA28B4A40300387C27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5214F2ED28B4A40300387C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5214F2EF28B4A40900387C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5214F2F228B4A40900387C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5214F2F428B4A40900387C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaData.swift; sourceTree = "<group>"; };
+		52530C9A28B789EB00D3A1F8 /* SearchableAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableAttributeViewController.swift; sourceTree = "<group>"; };
+		52530C9B28B789EB00D3A1F8 /* SearchableAttributeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchableAttributeViewController.xib; sourceTree = "<group>"; };
+		52531ED728B8AAA80052A372 /* FilterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterScreenViewController.swift; sourceTree = "<group>"; };
+		52531ED828B8AAA80052A372 /* FilterScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterScreenViewController.xib; sourceTree = "<group>"; };
+		52531EDC28B8B9450052A372 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		52531EDE28B8D9AE0052A372 /* FacetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacetsViewController.swift; sourceTree = "<group>"; };
+		52531EDF28B8D9AE0052A372 /* FacetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacetsViewController.xib; sourceTree = "<group>"; };
+		52A46A6028B4FD0E00ABA588 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		52E9BC5A28B4DFF000AFC8AD /* ItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableCell.swift; sourceTree = "<group>"; };
+		52E9BC5B28B4DFF000AFC8AD /* ItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableCell.xib; sourceTree = "<group>"; };
+		52E9BC5E28B4E29400AFC8AD /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		95FF86C8BA1AE97FD41395B9 /* Pods_Algolia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algolia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5214F2E028B4A40300387C27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DF39C9E4715303CD6A78EF /* Pods_Algolia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5202AAD028B8DCBB000D6A0B /* Gender Facet */ = {
+			isa = PBXGroup;
+			children = (
+				5202AACC28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift */,
+				5202AACD28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib */,
+			);
+			path = "Gender Facet";
+			sourceTree = "<group>";
+		};
+		520BBBF928B4DADA00D345AD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				520BBBF528B4DAD300D345AD /* HomeViewController.swift */,
+				520BBBF628B4DAD300D345AD /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5214F2DA28B4A40300387C27 = {
+			isa = PBXGroup;
+			children = (
+				5214F2E528B4A40300387C27 /* Algolia */,
+				5214F2E428B4A40300387C27 /* Products */,
+				6BBF38A6D3910FC8A80CF22D /* Pods */,
+				C6D95731B9107163BAF1718A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5214F2E428B4A40300387C27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5214F2E328B4A40300387C27 /* Algolia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5214F2E528B4A40300387C27 /* Algolia */ = {
+			isa = PBXGroup;
+			children = (
+				5214F2E628B4A40300387C27 /* AppDelegate.swift */,
+				5214F2E828B4A40300387C27 /* SceneDelegate.swift */,
+				5214F2EA28B4A40300387C27 /* ViewController.swift */,
+				5214F2EC28B4A40300387C27 /* Main.storyboard */,
+				5214F2EF28B4A40900387C27 /* Assets.xcassets */,
+				5214F2F128B4A40900387C27 /* LaunchScreen.storyboard */,
+				5214F2F428B4A40900387C27 /* Info.plist */,
+				5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */,
+				52530C9E28B789F200D3A1F8 /* Searchable Attribute */,
+				52E9BC5728B4DF9800AFC8AD /* Table Cell */,
+				520BBBF928B4DADA00D345AD /* Home */,
+				52E9BC5E28B4E29400AFC8AD /* ResultModel.swift */,
+				52A46A6028B4FD0E00ABA588 /* DataModel.swift */,
+				52531EDB28B8ADF60052A372 /* Filter Screen */,
+				52531EE228B8D9B40052A372 /* Facets */,
+			);
+			path = Algolia;
+			sourceTree = "<group>";
+		};
+		52530C9E28B789F200D3A1F8 /* Searchable Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				52530C9A28B789EB00D3A1F8 /* SearchableAttributeViewController.swift */,
+				52530C9B28B789EB00D3A1F8 /* SearchableAttributeViewController.xib */,
+			);
+			path = "Searchable Attribute";
+			sourceTree = "<group>";
+		};
+		52531EDB28B8ADF60052A372 /* Filter Screen */ = {
+			isa = PBXGroup;
+			children = (
+				52531ED728B8AAA80052A372 /* FilterScreenViewController.swift */,
+				52531ED828B8AAA80052A372 /* FilterScreenViewController.xib */,
+				52531EDC28B8B9450052A372 /* Checkbox.swift */,
+			);
+			path = "Filter Screen";
+			sourceTree = "<group>";
+		};
+		52531EE228B8D9B40052A372 /* Facets */ = {
+			isa = PBXGroup;
+			children = (
+				5202AAD028B8DCBB000D6A0B /* Gender Facet */,
+				52531EDE28B8D9AE0052A372 /* FacetsViewController.swift */,
+				52531EDF28B8D9AE0052A372 /* FacetsViewController.xib */,
+			);
+			path = Facets;
+			sourceTree = "<group>";
+		};
+		52E9BC5728B4DF9800AFC8AD /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52E9BC5A28B4DFF000AFC8AD /* ItemTableCell.swift */,
+				52E9BC5B28B4DFF000AFC8AD /* ItemTableCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		6BBF38A6D3910FC8A80CF22D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15FE5F65E83BA5B73BF8EEB2 /* Pods-Algolia.debug.xcconfig */,
+				3725157FFD45EA68439AE5FC /* Pods-Algolia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6D95731B9107163BAF1718A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95FF86C8BA1AE97FD41395B9 /* Pods_Algolia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5214F2E228B4A40300387C27 /* Algolia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5214F2F728B4A40900387C27 /* Build configuration list for PBXNativeTarget "Algolia" */;
+			buildPhases = (
+				B9510D30F8E34EEF6EDCE2F7 /* [CP] Check Pods Manifest.lock */,
+				5214F2DF28B4A40300387C27 /* Sources */,
+				5214F2E028B4A40300387C27 /* Frameworks */,
+				5214F2E128B4A40300387C27 /* Resources */,
+				F1D5B89362A0A078C7C19CCC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Algolia;
+			productName = Algolia;
+			productReference = 5214F2E328B4A40300387C27 /* Algolia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5214F2DB28B4A40300387C27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5214F2E228B4A40300387C27 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5214F2DE28B4A40300387C27 /* Build configuration list for PBXProject "Algolia" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5214F2DA28B4A40300387C27;
+			productRefGroup = 5214F2E428B4A40300387C27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5214F2E228B4A40300387C27 /* Algolia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5214F2E128B4A40300387C27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5214F2F328B4A40900387C27 /* LaunchScreen.storyboard in Resources */,
+				52531EDA28B8AAA80052A372 /* FilterScreenViewController.xib in Resources */,
+				52530C9D28B789EB00D3A1F8 /* SearchableAttributeViewController.xib in Resources */,
+				5214F2F028B4A40900387C27 /* Assets.xcassets in Resources */,
+				5202AACF28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib in Resources */,
+				5214F2EE28B4A40300387C27 /* Main.storyboard in Resources */,
+				520BBBF828B4DAD300D345AD /* HomeViewController.xib in Resources */,
+				52531EE128B8D9AE0052A372 /* FacetsViewController.xib in Resources */,
+				52E9BC5D28B4DFF000AFC8AD /* ItemTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9510D30F8E34EEF6EDCE2F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Algolia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D5B89362A0A078C7C19CCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Algolia/Pods-Algolia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Algolia/Pods-Algolia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Algolia/Pods-Algolia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5214F2DF28B4A40300387C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520BBBF728B4DAD300D345AD /* HomeViewController.swift in Sources */,
+				5214F2EB28B4A40300387C27 /* ViewController.swift in Sources */,
+				52531ED928B8AAA80052A372 /* FilterScreenViewController.swift in Sources */,
+				5214F2E728B4A40300387C27 /* AppDelegate.swift in Sources */,
+				52531EDD28B8B9450052A372 /* Checkbox.swift in Sources */,
+				5214F2E928B4A40300387C27 /* SceneDelegate.swift in Sources */,
+				52E9BC5F28B4E29400AFC8AD /* ResultModel.swift in Sources */,
+				52A46A6128B4FD0F00ABA588 /* DataModel.swift in Sources */,
+				52E9BC5C28B4DFF000AFC8AD /* ItemTableCell.swift in Sources */,
+				5202AACE28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift in Sources */,
+				5214F2FD28B4B29F00387C27 /* AlgoliaData.swift in Sources */,
+				52531EE028B8D9AE0052A372 /* FacetsViewController.swift in Sources */,
+				52530C9C28B789EB00D3A1F8 /* SearchableAttributeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5214F2EC28B4A40300387C27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5214F2ED28B4A40300387C27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5214F2F128B4A40900387C27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5214F2F228B4A40900387C27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5214F2F528B4A40900387C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5214F2F628B4A40900387C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5214F2F828B4A40900387C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15FE5F65E83BA5B73BF8EEB2 /* Pods-Algolia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Algolia/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = HomeViewController;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.Algolia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5214F2F928B4A40900387C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3725157FFD45EA68439AE5FC /* Pods-Algolia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Algolia/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = HomeViewController;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.Algolia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5214F2DE28B4A40300387C27 /* Build configuration list for PBXProject "Algolia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5214F2F528B4A40900387C27 /* Debug */,
+				5214F2F628B4A40900387C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5214F2F728B4A40900387C27 /* Build configuration list for PBXNativeTarget "Algolia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5214F2F828B4A40900387C27 /* Debug */,
+				5214F2F928B4A40900387C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5214F2DB28B4A40300387C27 /* Project object */;
+}
