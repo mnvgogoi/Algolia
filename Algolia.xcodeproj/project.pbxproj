@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5202AACE28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5202AACC28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift */; };
-		5202AACF28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5202AACD28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib */; };
 		520BBBF728B4DAD300D345AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BBBF528B4DAD300D345AD /* HomeViewController.swift */; };
 		520BBBF828B4DAD300D345AD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520BBBF628B4DAD300D345AD /* HomeViewController.xib */; };
 		5214F2E728B4A40300387C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214F2E628B4A40300387C27 /* AppDelegate.swift */; };
@@ -20,11 +18,20 @@
 		5214F2FD28B4B29F00387C27 /* AlgoliaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */; };
 		52530C9C28B789EB00D3A1F8 /* SearchableAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52530C9A28B789EB00D3A1F8 /* SearchableAttributeViewController.swift */; };
 		52530C9D28B789EB00D3A1F8 /* SearchableAttributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52530C9B28B789EB00D3A1F8 /* SearchableAttributeViewController.xib */; };
-		52531ED928B8AAA80052A372 /* FilterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52531ED728B8AAA80052A372 /* FilterScreenViewController.swift */; };
-		52531EDA28B8AAA80052A372 /* FilterScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52531ED828B8AAA80052A372 /* FilterScreenViewController.xib */; };
-		52531EDD28B8B9450052A372 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52531EDC28B8B9450052A372 /* Checkbox.swift */; };
-		52531EE028B8D9AE0052A372 /* FacetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52531EDE28B8D9AE0052A372 /* FacetsViewController.swift */; };
-		52531EE128B8D9AE0052A372 /* FacetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52531EDF28B8D9AE0052A372 /* FacetsViewController.xib */; };
+		5283E5FB28BDE29300F49CA2 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283E5FA28BDE29300F49CA2 /* UserPreference.swift */; };
+		528DC5CF28C1F79900C243A8 /* AllFacetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DC5CD28C1F79900C243A8 /* AllFacetsViewController.swift */; };
+		528DC5D028C1F79900C243A8 /* AllFacetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528DC5CE28C1F79900C243A8 /* AllFacetsViewController.xib */; };
+		528DC5D328C1F8E400C243A8 /* FacetsKeyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DC5D128C1F8E400C243A8 /* FacetsKeyTableCell.swift */; };
+		528DC5D428C1F8E400C243A8 /* FacetsKeyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528DC5D228C1F8E400C243A8 /* FacetsKeyTableCell.xib */; };
+		528DC5D728C1F94C00C243A8 /* FacetsValueTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DC5D528C1F94C00C243A8 /* FacetsValueTableCell.swift */; };
+		528DC5D828C1F94C00C243A8 /* FacetsValueTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528DC5D628C1F94C00C243A8 /* FacetsValueTableCell.xib */; };
+		528DC5DA28C21E0400C243A8 /* UserFacets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528DC5D928C21E0400C243A8 /* UserFacets.swift */; };
+		52906CFE28C5F1380083270E /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52906CFD28C5F1380083270E /* FilterManager.swift */; };
+		5293EE5428C088ED0016A69E /* AlgoliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293EE5328C088ED0016A69E /* AlgoliaTests.swift */; };
+		5293EE5B28C08F860016A69E /* ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293EE5A28C08F860016A69E /* ClientConfig.swift */; };
+		5293EE5D28C0B10E0016A69E /* IndexTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293EE5C28C0B10E0016A69E /* IndexTags.swift */; };
+		52A0C56228BF709100230831 /* SorrtingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0C56028BF709100230831 /* SorrtingViewController.swift */; };
+		52A0C56328BF709100230831 /* SorrtingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A0C56128BF709100230831 /* SorrtingViewController.xib */; };
 		52A46A6128B4FD0F00ABA588 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A46A6028B4FD0E00ABA588 /* DataModel.swift */; };
 		52E9BC5C28B4DFF000AFC8AD /* ItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9BC5A28B4DFF000AFC8AD /* ItemTableCell.swift */; };
 		52E9BC5D28B4DFF000AFC8AD /* ItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E9BC5B28B4DFF000AFC8AD /* ItemTableCell.xib */; };
@@ -32,11 +39,19 @@
 		91DF39C9E4715303CD6A78EF /* Pods_Algolia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FF86C8BA1AE97FD41395B9 /* Pods_Algolia.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5293EE5528C088ED0016A69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5214F2DB28B4A40300387C27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5214F2E228B4A40300387C27;
+			remoteInfo = Algolia;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		15FE5F65E83BA5B73BF8EEB2 /* Pods-Algolia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.debug.xcconfig"; path = "Target Support Files/Pods-Algolia/Pods-Algolia.debug.xcconfig"; sourceTree = "<group>"; };
 		3725157FFD45EA68439AE5FC /* Pods-Algolia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia.release.xcconfig"; path = "Target Support Files/Pods-Algolia/Pods-Algolia.release.xcconfig"; sourceTree = "<group>"; };
-		5202AACC28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderFacetTableViewCell.swift; sourceTree = "<group>"; };
-		5202AACD28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderFacetTableViewCell.xib; sourceTree = "<group>"; };
 		520BBBF528B4DAD300D345AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		520BBBF628B4DAD300D345AD /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		5214F2E328B4A40300387C27 /* Algolia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algolia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,11 +65,21 @@
 		5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaData.swift; sourceTree = "<group>"; };
 		52530C9A28B789EB00D3A1F8 /* SearchableAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableAttributeViewController.swift; sourceTree = "<group>"; };
 		52530C9B28B789EB00D3A1F8 /* SearchableAttributeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchableAttributeViewController.xib; sourceTree = "<group>"; };
-		52531ED728B8AAA80052A372 /* FilterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterScreenViewController.swift; sourceTree = "<group>"; };
-		52531ED828B8AAA80052A372 /* FilterScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterScreenViewController.xib; sourceTree = "<group>"; };
-		52531EDC28B8B9450052A372 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
-		52531EDE28B8D9AE0052A372 /* FacetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacetsViewController.swift; sourceTree = "<group>"; };
-		52531EDF28B8D9AE0052A372 /* FacetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacetsViewController.xib; sourceTree = "<group>"; };
+		5283E5FA28BDE29300F49CA2 /* UserPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
+		528DC5CD28C1F79900C243A8 /* AllFacetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFacetsViewController.swift; sourceTree = "<group>"; };
+		528DC5CE28C1F79900C243A8 /* AllFacetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllFacetsViewController.xib; sourceTree = "<group>"; };
+		528DC5D128C1F8E400C243A8 /* FacetsKeyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacetsKeyTableCell.swift; sourceTree = "<group>"; };
+		528DC5D228C1F8E400C243A8 /* FacetsKeyTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacetsKeyTableCell.xib; sourceTree = "<group>"; };
+		528DC5D528C1F94C00C243A8 /* FacetsValueTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacetsValueTableCell.swift; sourceTree = "<group>"; };
+		528DC5D628C1F94C00C243A8 /* FacetsValueTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacetsValueTableCell.xib; sourceTree = "<group>"; };
+		528DC5D928C21E0400C243A8 /* UserFacets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacets.swift; sourceTree = "<group>"; };
+		52906CFD28C5F1380083270E /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		5293EE5128C088ED0016A69E /* AlgoliaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgoliaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5293EE5328C088ED0016A69E /* AlgoliaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaTests.swift; sourceTree = "<group>"; };
+		5293EE5A28C08F860016A69E /* ClientConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConfig.swift; sourceTree = "<group>"; };
+		5293EE5C28C0B10E0016A69E /* IndexTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTags.swift; sourceTree = "<group>"; };
+		52A0C56028BF709100230831 /* SorrtingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorrtingViewController.swift; sourceTree = "<group>"; };
+		52A0C56128BF709100230831 /* SorrtingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SorrtingViewController.xib; sourceTree = "<group>"; };
 		52A46A6028B4FD0E00ABA588 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		52E9BC5A28B4DFF000AFC8AD /* ItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableCell.swift; sourceTree = "<group>"; };
 		52E9BC5B28B4DFF000AFC8AD /* ItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableCell.xib; sourceTree = "<group>"; };
@@ -71,18 +96,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5293EE4E28C088ED0016A69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5202AAD028B8DCBB000D6A0B /* Gender Facet */ = {
-			isa = PBXGroup;
-			children = (
-				5202AACC28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift */,
-				5202AACD28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib */,
-			);
-			path = "Gender Facet";
-			sourceTree = "<group>";
-		};
 		520BBBF928B4DADA00D345AD /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5214F2E528B4A40300387C27 /* Algolia */,
+				5293EE5228C088ED0016A69E /* AlgoliaTests */,
 				5214F2E428B4A40300387C27 /* Products */,
 				6BBF38A6D3910FC8A80CF22D /* Pods */,
 				C6D95731B9107163BAF1718A /* Frameworks */,
@@ -106,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				5214F2E328B4A40300387C27 /* Algolia.app */,
+				5293EE5128C088ED0016A69E /* AlgoliaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,14 +145,13 @@
 				5214F2EF28B4A40900387C27 /* Assets.xcassets */,
 				5214F2F128B4A40900387C27 /* LaunchScreen.storyboard */,
 				5214F2F428B4A40900387C27 /* Info.plist */,
-				5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */,
-				52530C9E28B789F200D3A1F8 /* Searchable Attribute */,
-				52E9BC5728B4DF9800AFC8AD /* Table Cell */,
 				520BBBF928B4DADA00D345AD /* Home */,
-				52E9BC5E28B4E29400AFC8AD /* ResultModel.swift */,
+				52E9BC5728B4DF9800AFC8AD /* Table Cell */,
+				52906CFF28C603C30083270E /* Algolia */,
 				52A46A6028B4FD0E00ABA588 /* DataModel.swift */,
-				52531EDB28B8ADF60052A372 /* Filter Screen */,
-				52531EE228B8D9B40052A372 /* Facets */,
+				528DC5CC28C1F77A00C243A8 /* Facets Screen */,
+				52A0C55F28BF705B00230831 /* Sorting Screen */,
+				52530C9E28B789F200D3A1F8 /* Searchable Attribute */,
 			);
 			path = Algolia;
 			sourceTree = "<group>";
@@ -141,24 +165,56 @@
 			path = "Searchable Attribute";
 			sourceTree = "<group>";
 		};
-		52531EDB28B8ADF60052A372 /* Filter Screen */ = {
+		528DC5CC28C1F77A00C243A8 /* Facets Screen */ = {
 			isa = PBXGroup;
 			children = (
-				52531ED728B8AAA80052A372 /* FilterScreenViewController.swift */,
-				52531ED828B8AAA80052A372 /* FilterScreenViewController.xib */,
-				52531EDC28B8B9450052A372 /* Checkbox.swift */,
+				528DC5CD28C1F79900C243A8 /* AllFacetsViewController.swift */,
+				528DC5CE28C1F79900C243A8 /* AllFacetsViewController.xib */,
+				528DC5D128C1F8E400C243A8 /* FacetsKeyTableCell.swift */,
+				528DC5D228C1F8E400C243A8 /* FacetsKeyTableCell.xib */,
+				528DC5D528C1F94C00C243A8 /* FacetsValueTableCell.swift */,
+				528DC5D628C1F94C00C243A8 /* FacetsValueTableCell.xib */,
 			);
-			path = "Filter Screen";
+			path = "Facets Screen";
 			sourceTree = "<group>";
 		};
-		52531EE228B8D9B40052A372 /* Facets */ = {
+		52906CFF28C603C30083270E /* Algolia */ = {
 			isa = PBXGroup;
 			children = (
-				5202AAD028B8DCBB000D6A0B /* Gender Facet */,
-				52531EDE28B8D9AE0052A372 /* FacetsViewController.swift */,
-				52531EDF28B8D9AE0052A372 /* FacetsViewController.xib */,
+				52E9BC5E28B4E29400AFC8AD /* ResultModel.swift */,
+				52906D0028C604050083270E /* User Preference */,
+				5214F2FC28B4B29F00387C27 /* AlgoliaData.swift */,
+				5293EE5A28C08F860016A69E /* ClientConfig.swift */,
+				5293EE5C28C0B10E0016A69E /* IndexTags.swift */,
+				52906CFD28C5F1380083270E /* FilterManager.swift */,
 			);
-			path = Facets;
+			path = Algolia;
+			sourceTree = "<group>";
+		};
+		52906D0028C604050083270E /* User Preference */ = {
+			isa = PBXGroup;
+			children = (
+				528DC5D928C21E0400C243A8 /* UserFacets.swift */,
+				5283E5FA28BDE29300F49CA2 /* UserPreference.swift */,
+			);
+			path = "User Preference";
+			sourceTree = "<group>";
+		};
+		5293EE5228C088ED0016A69E /* AlgoliaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5293EE5328C088ED0016A69E /* AlgoliaTests.swift */,
+			);
+			path = AlgoliaTests;
+			sourceTree = "<group>";
+		};
+		52A0C55F28BF705B00230831 /* Sorting Screen */ = {
+			isa = PBXGroup;
+			children = (
+				52A0C56028BF709100230831 /* SorrtingViewController.swift */,
+				52A0C56128BF709100230831 /* SorrtingViewController.xib */,
+			);
+			path = "Sorting Screen";
 			sourceTree = "<group>";
 		};
 		52E9BC5728B4DF9800AFC8AD /* Table Cell */ = {
@@ -209,6 +265,24 @@
 			productReference = 5214F2E328B4A40300387C27 /* Algolia.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5293EE5028C088ED0016A69E /* AlgoliaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5293EE5928C088ED0016A69E /* Build configuration list for PBXNativeTarget "AlgoliaTests" */;
+			buildPhases = (
+				5293EE4D28C088ED0016A69E /* Sources */,
+				5293EE4E28C088ED0016A69E /* Frameworks */,
+				5293EE4F28C088ED0016A69E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5293EE5628C088ED0016A69E /* PBXTargetDependency */,
+			);
+			name = AlgoliaTests;
+			productName = AlgoliaTests;
+			productReference = 5293EE5128C088ED0016A69E /* AlgoliaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,6 +295,10 @@
 				TargetAttributes = {
 					5214F2E228B4A40300387C27 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					5293EE5028C088ED0016A69E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5214F2E228B4A40300387C27;
 					};
 				};
 			};
@@ -238,6 +316,7 @@
 			projectRoot = "";
 			targets = (
 				5214F2E228B4A40300387C27 /* Algolia */,
+				5293EE5028C088ED0016A69E /* AlgoliaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,14 +327,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5214F2F328B4A40900387C27 /* LaunchScreen.storyboard in Resources */,
-				52531EDA28B8AAA80052A372 /* FilterScreenViewController.xib in Resources */,
 				52530C9D28B789EB00D3A1F8 /* SearchableAttributeViewController.xib in Resources */,
 				5214F2F028B4A40900387C27 /* Assets.xcassets in Resources */,
-				5202AACF28B8DCAD000D6A0B /* GenderFacetTableViewCell.xib in Resources */,
 				5214F2EE28B4A40300387C27 /* Main.storyboard in Resources */,
 				520BBBF828B4DAD300D345AD /* HomeViewController.xib in Resources */,
-				52531EE128B8D9AE0052A372 /* FacetsViewController.xib in Resources */,
+				528DC5D028C1F79900C243A8 /* AllFacetsViewController.xib in Resources */,
+				52A0C56328BF709100230831 /* SorrtingViewController.xib in Resources */,
+				528DC5D428C1F8E400C243A8 /* FacetsKeyTableCell.xib in Resources */,
 				52E9BC5D28B4DFF000AFC8AD /* ItemTableCell.xib in Resources */,
+				528DC5D828C1F94C00C243A8 /* FacetsValueTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5293EE4F28C088ED0016A69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,21 +397,42 @@
 			files = (
 				520BBBF728B4DAD300D345AD /* HomeViewController.swift in Sources */,
 				5214F2EB28B4A40300387C27 /* ViewController.swift in Sources */,
-				52531ED928B8AAA80052A372 /* FilterScreenViewController.swift in Sources */,
+				528DC5DA28C21E0400C243A8 /* UserFacets.swift in Sources */,
+				5293EE5D28C0B10E0016A69E /* IndexTags.swift in Sources */,
+				528DC5D728C1F94C00C243A8 /* FacetsValueTableCell.swift in Sources */,
+				52906CFE28C5F1380083270E /* FilterManager.swift in Sources */,
 				5214F2E728B4A40300387C27 /* AppDelegate.swift in Sources */,
-				52531EDD28B8B9450052A372 /* Checkbox.swift in Sources */,
 				5214F2E928B4A40300387C27 /* SceneDelegate.swift in Sources */,
+				5293EE5B28C08F860016A69E /* ClientConfig.swift in Sources */,
 				52E9BC5F28B4E29400AFC8AD /* ResultModel.swift in Sources */,
+				528DC5D328C1F8E400C243A8 /* FacetsKeyTableCell.swift in Sources */,
 				52A46A6128B4FD0F00ABA588 /* DataModel.swift in Sources */,
 				52E9BC5C28B4DFF000AFC8AD /* ItemTableCell.swift in Sources */,
-				5202AACE28B8DCAD000D6A0B /* GenderFacetTableViewCell.swift in Sources */,
 				5214F2FD28B4B29F00387C27 /* AlgoliaData.swift in Sources */,
-				52531EE028B8D9AE0052A372 /* FacetsViewController.swift in Sources */,
+				528DC5CF28C1F79900C243A8 /* AllFacetsViewController.swift in Sources */,
+				5283E5FB28BDE29300F49CA2 /* UserPreference.swift in Sources */,
+				52A0C56228BF709100230831 /* SorrtingViewController.swift in Sources */,
 				52530C9C28B789EB00D3A1F8 /* SearchableAttributeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5293EE4D28C088ED0016A69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5293EE5428C088ED0016A69E /* AlgoliaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5293EE5628C088ED0016A69E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5214F2E228B4A40300387C27 /* Algolia */;
+			targetProxy = 5293EE5528C088ED0016A69E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5214F2EC28B4A40300387C27 /* Main.storyboard */ = {
@@ -518,6 +626,42 @@
 			};
 			name = Release;
 		};
+		5293EE5728C088ED0016A69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.AlgoliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algolia.app/Algolia";
+			};
+			name = Debug;
+		};
+		5293EE5828C088ED0016A69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.AlgoliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algolia.app/Algolia";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,6 +679,15 @@
 			buildConfigurations = (
 				5214F2F828B4A40900387C27 /* Debug */,
 				5214F2F928B4A40900387C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5293EE5928C088ED0016A69E /* Build configuration list for PBXNativeTarget "AlgoliaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5293EE5728C088ED0016A69E /* Debug */,
+				5293EE5828C088ED0016A69E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

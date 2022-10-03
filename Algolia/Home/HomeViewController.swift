@@ -7,24 +7,25 @@
 
 import UIKit
 
-protocol FacetsDelegate{
-    func getFacets()
-}
-
-
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchableAttributeBtn: UIButton!
     @IBOutlet weak var filterBtn: UIButton!
+    @IBOutlet weak var sortBtn: UIButton!
+    @IBOutlet weak var prevPageBtn: UIButton!
+    @IBOutlet weak var nextPageBtn: UIButton!
+    @IBOutlet weak var pageNoLabel: UILabel!
     
     
     // character model
     var resultModel = [ResultModel]()
     
-    var facetsDelegate: FacetsDelegate?
+    var facetsValue: [String?] = []
     
+    var pageNo: Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,19 +34,24 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         searchBar.delegate = self
         
+        pageNoLabel.text = "\(pageNo + 1)"
+        
         // register cells
         tableView.register(UINib.init(nibName: "ItemTableCell", bundle: nil), forCellReuseIdentifier: "ItemTableCell")
         
-        callDataModel("")
-        
+        getDataFromAlgolia(searchData: "", page: pageNo)
     }
     
-    func callDataModel(_ item: String?){
-        //*calling getData function.....(and defining the completion func)
-        DataModel().getData(completion: { items, error in
+    override func viewDidAppear(_ animated: Bool) {
+        print("-------- viewdidapper =========")
+        self.getDataFromAlgolia(searchData: "", page: pageNo)
+    }
+    
+    func getDataFromAlgolia(searchData: String?, page:Int){
+//        print("..........",page)
+        DataModel().getData(completion: { items, error, facets in
             if (items != nil){
                 self.resultModel = items!
-                
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -53,21 +59,60 @@ class HomeViewController: UIViewController {
                 {
                     print("No data")
                 }
+                self.facetsValue = facets
             }
             else if (error != nil){
                 print(error ?? "Error value")
             }
-        }, searchItem: item)
+        }, searchItem: searchData, page: page)
+        
+    }
+    
+    
+    func checkSorting() {
+        print("checksorting is called.......")
+        getDataFromAlgolia(searchData: "", page: 0)
+    }
+    
+    func setFacets() {
+        print("set facets runnning")
+        getDataFromAlgolia(searchData: "", page: 0)
     }
     
     
     @IBAction func searchableAttributeBtnPressed(_ sender: UIButton) {
-        present(FacetsViewController(), animated: true)
-        self.facetsDelegate?.getFacets()
+        let allFacetsVC = AllFacetsViewController()
+//        allFacetsVC.delegate = self
+        navigationController?.pushViewController(allFacetsVC, animated: true)
     }
     
     @IBAction func filterBtnPressed(_ sender: UIButton) {
-        present(FilterScreenViewController(), animated: true)
+        let searchableVC = SearchableAttributeViewController()
+        navigationController?.pushViewController(searchableVC, animated: true)
+    }
+    
+    @IBAction func sortBtnPressed(_ sender: UIButton) {
+        let sortingVC = SorrtingViewController()
+        navigationController?.pushViewController(sortingVC, animated: true)
+    }
+    
+    
+    @IBAction func prevPageBtnPressed(_ sender: UIButton) {
+        if(pageNo > 0){
+            pageNo -= 1
+            pageNoLabel.text = "\(pageNo + 1)"
+            getDataFromAlgolia(searchData: "", page: pageNo)
+        }
+    }
+    
+    @IBAction func nextPageBtnPressed(_ sender: UIButton) {
+    
+        if(pageNo < 10){
+            pageNo += 1
+            pageNoLabel.text = "\(pageNo + 1)"
+            getDataFromAlgolia(searchData: "", page: pageNo)
+        }
+        
     }
     
     
@@ -78,7 +123,6 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        print("Count -  \(resultModel.count)")
         return resultModel.count
     }
     
@@ -97,7 +141,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
 extension HomeViewController: UISearchBarDelegate,UISearchDisplayDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         //        print("====>>",searchText)
-        callDataModel(searchText)
+        
+        getDataFromAlgolia(searchData: searchText, page: 0)
     }
 }
 

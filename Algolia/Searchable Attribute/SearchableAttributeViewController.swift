@@ -18,13 +18,13 @@ class SearchableAttributeViewController: UIViewController {
     @IBOutlet weak var doneBtn: UIButton!
     
     
-    var algoliaData = AlgoliaData.algoliaData
+    var userPreference = UserPreference.userPreference
     
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundCard.layer.cornerRadius = 20
         
-        for attribute in algoliaData.myAttributes{
+        for attribute in userPreference.myAttributes{
             print("Attribute - \(attribute)")
             
             switch attribute {
@@ -45,7 +45,7 @@ class SearchableAttributeViewController: UIViewController {
     
     func getSearchAttributes(element: String?){
         if element != nil{
-            algoliaData.myAttributes.append(SearchableAttribute(rawValue: element!))
+            userPreference.myAttributes.append(SearchableAttribute(rawValue: element!))
         }
 
         //* calling for searchable attribute results
@@ -60,8 +60,8 @@ class SearchableAttributeViewController: UIViewController {
         }
         else{
             print("name off")
-            if let itemIndex = algoliaData.myAttributes.firstIndex(of: "name"){
-                algoliaData.myAttributes.remove(at: itemIndex)
+            if let itemIndex = userPreference.myAttributes.firstIndex(of: "name"){
+                userPreference.myAttributes.remove(at: itemIndex)
             }
             getSearchAttributes(element: nil)
         }
@@ -75,8 +75,8 @@ class SearchableAttributeViewController: UIViewController {
         }
         else{
             print("species off")
-            if let itemIndex = algoliaData.myAttributes.firstIndex(of: "species"){
-                algoliaData.myAttributes.remove(at: itemIndex)
+            if let itemIndex = userPreference.myAttributes.firstIndex(of: "species"){
+                userPreference.myAttributes.remove(at: itemIndex)
             }
             getSearchAttributes(element: nil)
         }
@@ -89,8 +89,8 @@ class SearchableAttributeViewController: UIViewController {
         }
         else{
             print("status off")
-            if let itemIndex = algoliaData.myAttributes.firstIndex(of: "status"){
-                algoliaData.myAttributes.remove(at: itemIndex)
+            if let itemIndex = userPreference.myAttributes.firstIndex(of: "status"){
+                userPreference.myAttributes.remove(at: itemIndex)
             }
             getSearchAttributes(element: nil)
         }
@@ -104,8 +104,8 @@ class SearchableAttributeViewController: UIViewController {
         }
         else{
             print("gender off")
-            if let itemIndex = algoliaData.myAttributes.firstIndex(of: "gender"){
-                algoliaData.myAttributes.remove(at: itemIndex)
+            if let itemIndex = userPreference.myAttributes.firstIndex(of: "gender"){
+                userPreference.myAttributes.remove(at: itemIndex)
             }
             getSearchAttributes(element: nil)
         }
@@ -113,7 +113,7 @@ class SearchableAttributeViewController: UIViewController {
     }
     
     @IBAction func doneBtnPressed(_ sender: UIButton) {
-        print(algoliaData.myAttributes)
+        print(userPreference.myAttributes)
         self.dismiss(animated: true)
     }
     

@@ -11,8 +11,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Algolia" customModuleProvider="target">
             <connections>
                 <outlet property="filterBtn" destination="NHi-vK-dUm" id="16q-kf-rFt"/>
+                <outlet property="nextPageBtn" destination="6LU-SQ-N0P" id="XqR-0y-zPr"/>
+                <outlet property="pageNoLabel" destination="EeI-AV-e9e" id="aJW-bz-psb"/>
+                <outlet property="prevPageBtn" destination="8No-Ug-Hig" id="WLV-Jt-7VX"/>
                 <outlet property="searchBar" destination="KN2-4P-Cim" id="wXA-fn-wWy"/>
                 <outlet property="searchableAttributeBtn" destination="fXL-xV-Gwm" id="XkE-Y1-HJF"/>
+                <outlet property="sortBtn" destination="M72-It-OyU" id="ZJw-Ct-EsA"/>
                 <outlet property="tableView" destination="RSF-UX-jav" id="eYM-mb-UNU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +27,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RSF-UX-jav">
-                    <rect key="frame" x="0.0" y="151" width="414" height="745"/>
+                    <rect key="frame" x="0.0" y="151" width="414" height="665"/>
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                     <color key="sectionIndexBackgroundColor" red="0.32325399669999999" green="0.61879632760000003" blue="0.81362794790000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </tableView>
@@ -35,7 +39,7 @@
                     <rect key="frame" x="5" y="110" width="404" height="31"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-xV-Gwm">
-                            <rect key="frame" x="0.0" y="0.0" width="193.5" height="31"/>
+                            <rect key="frame" x="0.0" y="0.0" width="123.5" height="31"/>
                             <color key="tintColor" red="0.61549918010000004" green="0.85675634519999999" blue="0.8485113232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="tinted" image="slider.horizontal.3" catalog="system">
@@ -47,7 +51,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-vK-dUm">
-                            <rect key="frame" x="210.5" y="0.0" width="193.5" height="31"/>
+                            <rect key="frame" x="140.5" y="0.0" width="123" height="31"/>
                             <color key="tintColor" systemColor="systemMintColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" image="dpad.up.fill" catalog="system">
@@ -58,20 +62,70 @@
                                 <action selector="filterBtnPressed:" destination="-1" eventType="touchUpInside" id="ypM-tW-8Yp"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M72-It-OyU">
+                            <rect key="frame" x="280.5" y="0.0" width="123.5" height="31"/>
+                            <color key="tintColor" red="0.61549918010000004" green="0.85675634519999999" blue="0.8485113232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" image="slider.vertical.3" catalog="system">
+                                <color key="baseForegroundColor" red="0.30740071899999999" green="0.68281964039999998" blue="0.66363269570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="baseBackgroundColor" red="0.61549918010000004" green="0.85675634519999999" blue="0.8485113232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="sortBtnPressed:" destination="-1" eventType="touchUpInside" id="aA8-Fj-ttX"/>
+                            </connections>
+                        </button>
                     </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="ceE-vK-vDX">
+                    <rect key="frame" x="0.0" y="826" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8No-Ug-Hig">
+                            <rect key="frame" x="0.0" y="0.0" width="64.5" height="70"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="prevPageBtnPressed:" destination="-1" eventType="touchUpInside" id="w2Y-cT-x5r"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeI-AV-e9e">
+                            <rect key="frame" x="174.5" y="0.0" width="65" height="70"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LU-SQ-N0P">
+                            <rect key="frame" x="349.5" y="0.0" width="64.5" height="70"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="chevron.forward" catalog="system">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="nextPageBtnPressed:" destination="-1" eventType="touchUpInside" id="Kf2-MV-SZk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30740071899999999" green="0.68281964039999998" blue="0.66363269570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="vYi-Xo-l9G"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="ceE-vK-vDX" secondAttribute="bottom" id="08f-qP-6jM"/>
                 <constraint firstItem="KN2-4P-Cim" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="5U9-bl-88M"/>
                 <constraint firstItem="KN2-4P-Cim" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5kh-E8-mx0"/>
                 <constraint firstItem="RSF-UX-jav" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="BTN-By-hNy"/>
                 <constraint firstItem="Udz-1a-3Hn" firstAttribute="top" secondItem="KN2-4P-Cim" secondAttribute="bottom" constant="10" id="JYW-T2-d8C"/>
                 <constraint firstItem="Udz-1a-3Hn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="KVM-My-iKi"/>
+                <constraint firstItem="ceE-vK-vDX" firstAttribute="top" secondItem="RSF-UX-jav" secondAttribute="bottom" constant="10" id="LbA-yp-wJf"/>
                 <constraint firstItem="RSF-UX-jav" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Py4-O8-TgS"/>
+                <constraint firstItem="ceE-vK-vDX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UNL-Fv-cm3"/>
+                <constraint firstItem="ceE-vK-vDX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dF8-cG-dGA"/>
                 <constraint firstItem="RSF-UX-jav" firstAttribute="top" secondItem="Udz-1a-3Hn" secondAttribute="bottom" constant="10" id="icV-Of-dV3"/>
-                <constraint firstAttribute="bottom" secondItem="RSF-UX-jav" secondAttribute="bottom" id="ifx-Hs-al3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Udz-1a-3Hn" secondAttribute="trailing" constant="5" id="xAT-SX-QV2"/>
                 <constraint firstItem="KN2-4P-Cim" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zrH-p8-Syf"/>
             </constraints>
@@ -79,8 +133,11 @@
         </view>
     </objects>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
         <image name="dpad.up.fill" catalog="system" width="128" height="116"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
